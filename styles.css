@@ -24,7 +24,7 @@ p{
     padding: 10px;
 }
 
-.container{
+.right{
     display:flex ;
     background-color: hsl(221, 100%, 96%);
     border-radius: 20px;
@@ -36,8 +36,8 @@ p{
     gap: 20px;
 }
 
-.result{
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+.left{
+    background-image: var(--box-gradient)
     color: white;
     border-radius: 20px;
     display: flex;
@@ -89,6 +89,54 @@ p{
     font-size: x-large;
 }
 
+.continue-btn {
+    width: 290px;
+    height: 55px;
+
+    border: none;
+    border-radius: 30px;
+    background: color:hsl(234, 85%, 45%);
+    color: white;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .continue-btn:hover {
     background-image: var(--box-gradient);
+}
+
+@media only screen and (max-width: 375px) {
+    main {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .left {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        height: 356px;
+        width: 100vw;
+    }
+
+    .result {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .score-circle {
+        width: 135px;
+        height: 135px;
+    }
+
+    .percentage {
+        font-size: 16px;
+        width: 260px;
+        height: 57px;
+    }
+
+    .summary {
+        padding-top: 25px;
+    }
 }
