@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+--box-gradient: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))
+
 *{
     font-family:Hanken Grotesk ;
 }
@@ -85,4 +87,8 @@ p{
 .visual{
     color:hsl(234, 85%, 45%);
     font-size: x-large;
+}
+
+.continue-btn:hover {
+    background-image: var(--box-gradient);
 }
