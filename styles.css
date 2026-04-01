@@ -15,8 +15,7 @@ html, body {
 body{
     display: flex;
     justify-content: center;
-    align-items:center ;
-    background-color: azure;
+    align-items:center;
 }
 
 p{
@@ -37,7 +36,7 @@ p{
 }
 
 .result{
-    background-image: var(--box-gradient)
+    background-image: var(--box-gradient);
     color: white;
     border-radius: 20px;
     display: flex;
